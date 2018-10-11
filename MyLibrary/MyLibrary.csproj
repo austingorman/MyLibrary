@@ -7,12 +7,33 @@
   <ItemGroup>
     <Compile Remove="Migrations\20181010151506_Initial.cs" />
     <Compile Remove="Migrations\20181010151506_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20181011141702_PatronsAdded.cs" />
+    <Compile Remove="Migrations\20181011141702_PatronsAdded.Designer.cs" />
+    <Compile Remove="Migrations\20181011142916_PatronAddedd.cs" />
+    <Compile Remove="Migrations\20181011142916_PatronAddedd.Designer.cs" />
+    <Compile Remove="Migrations\20181011143256_PatronAddeddagain.cs" />
+    <Compile Remove="Migrations\20181011143256_PatronAddeddagain.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\PatronsController\Controllers\" />
+    <Folder Include="Areas\PatronsController\Data\" />
+    <Folder Include="Areas\PatronsController\Models\" />
+    <Folder Include="Areas\PatronsController\Views\" />
   </ItemGroup>
 
 </Project>

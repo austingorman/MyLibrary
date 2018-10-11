@@ -19,6 +19,8 @@ namespace MyLibrary.Models
 
         public string CloseHour { get; set; }
 
+        public virtual ICollection<Patron> Patrons { get; set; }
+
         public virtual ICollection<Book> Books { get; set; }
     }
 }

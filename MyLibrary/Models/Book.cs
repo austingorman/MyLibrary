@@ -24,5 +24,10 @@ namespace MyLibrary.Models
         public int LibraryId { get; set; }
 
         public Library Library { get; set; }
-    }
+
+        [Display(Name = "Current Patron")]
+        public int? PatronId { get; set; }
+
+        public Patron Patron { get; set; }
+     }
 }
